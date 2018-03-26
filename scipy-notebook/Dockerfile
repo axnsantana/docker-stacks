@@ -20,7 +20,7 @@ USER $NB_UID
 RUN conda install --quiet --yes \
     'nomkl' \
     'ipywidgets=7.1*' \
-    'pandas=0.19*' \
+    'pandas=0.22*' \
     'numexpr=2.6*' \
     'matplotlib=2.0*' \
     'scipy=0.19*' \
@@ -41,6 +41,8 @@ RUN conda install --quiet --yes \
     'vincent=0.4.*' \
     'beautifulsoup4=4.5.*' \
     'protobuf=3.*' \
+    'lime' \
+    'tpot' \
     'xlrd'  && \
     conda remove --quiet --yes --force qt pyqt && \
     conda clean -tipsy && \
